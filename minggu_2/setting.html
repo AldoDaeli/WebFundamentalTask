@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Setting – belajartailwind.com</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col" style="font-family:'Inter',sans-serif;">
+  <header class="bg-blue-800 flex items-center justify-between px-6 py-3 shadow">
+    <span class="text-white font-bold">tokopediaKW.com</span>
+    <a href="index.html" class="text-white text-sm border border-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">Logout</a>
+  </header>
+  <div class="flex flex-1">
+    <aside class="w-48 bg-white border-r border-gray-200 flex flex-col py-4 shrink-0">
+      <nav class="flex flex-col gap-1 px-3">
+        <a href="dashboard.html" class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Dashboard</a>
+        <a href="products.html" class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Products</a>
+        <a href="users.html" class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Users</a>
+        <a href="setting.html" class="bg-blue-800 text-white font-semibold text-sm px-4 py-2 rounded">Setting</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-8 flex flex-col gap-6">
+      <h1 class="text-2xl font-bold text-gray-800">Setting</h1>
+
+      <!-- Profil -->
+      <div class="bg-white rounded-xl shadow p-6 max-w-lg">
+        <h2 class="text-base font-semibold text-gray-700 mb-4">Profil Akun</h2>
+        <div class="flex flex-col gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Nama Lengkap</label>
+            <input type="text" value="Admin TokopediaKW" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input type="email" value="admin@tokopediakw.com" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <button class="bg-blue-800 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2 rounded-lg transition w-fit">Simpan Perubahan</button>
+        </div>
+      </div>
+
+      <!-- Ganti Password -->
+      <div class="bg-white rounded-xl shadow p-6 max-w-lg">
+        <h2 class="text-base font-semibold text-gray-700 mb-4">Ganti Password</h2>
+        <div class="flex flex-col gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Password Lama</label>
+            <input type="password" placeholder="Masukkan password lama" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Password Baru</label>
+            <input type="password" placeholder="Masukkan password baru" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Konfirmasi Password</label>
+            <input type="password" placeholder="Ulangi password baru" class="w-full border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500"/>
+          </div>
+          <button class="bg-blue-800 hover:bg-blue-700 text-white text-sm font-semibold px-6 py-2 rounded-lg transition w-fit">Update Password</button>
+        </div>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-black px-8 py-3 flex justify-center text-xs text-white">
+    <span>© 2026 belajartailwind.com. All rights reserved.</span>
+  </footer>
+</body>
+</html>

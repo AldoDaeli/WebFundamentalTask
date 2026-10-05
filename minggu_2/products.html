@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Products – belajartailwind.com</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body class="bg-gray-100 min-h-screen flex flex-col" style="font-family:'Inter',sans-serif;">
+  <header class="bg-blue-800 flex items-center justify-between px-6 py-3 shadow">
+    <span class="text-white font-bold">tokopediaKW.com</span>
+    <a href="index.html" class="text-white text-sm border border-blue-600 px-4 py-1 rounded hover:bg-blue-700 transition">Logout</a>
+  </header>
+  <div class="flex flex-1">
+    <aside class="w-48 bg-white border-r border-gray-200 flex flex-col py-4 shrink-0">
+      <nav class="flex flex-col gap-1 px-3">
+        <a href="dashboard.html" class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Dashboard</a>
+        <a href="products.html"  class="bg-blue-800 text-white font-semibold text-sm px-4 py-2 rounded">Products</a>
+        <a href="users.html"     class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Users</a>
+        <a href="setting.html"   class="text-gray-600 font-semibold text-sm px-4 py-2 rounded hover:bg-gray-100 transition">Setting</a>
+      </nav>
+    </aside>
+    <main class="flex-1 p-8 flex flex-col gap-6">
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-bold text-gray-800">Manajemen Produk</h1>
+        <a href="add-produk.html" class="bg-blue-800 hover:bg-blue-700 text-white text-sm font-semibold px-4 py-2 rounded transition">+ Add Product</a>
+      </div>
+      <div class="bg-white rounded-xl shadow overflow-hidden">
+        <table class="w-full text-sm">
+          <thead class="bg-blue-800 text-white">
+            <tr>
+              <th class="px-4 py-3 text-left">No</th>
+              <th class="px-4 py-3 text-left">Name</th>
+              <th class="px-4 py-3 text-left">Stock</th>
+              <th class="px-4 py-3 text-left">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-100">
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3">1</td>
+              <td class="px-4 py-3">Sepatu Sneakers</td>
+              <td class="px-4 py-3">120</td>
+              <td class="px-4 py-3 flex gap-2">
+                <a href="edit-produk.html" class="bg-yellow-400 hover:bg-yellow-300 text-white text-xs font-semibold px-3 py-1 rounded transition">Edit</a>
+                <button class="bg-red-500 hover:bg-red-400 text-white text-xs font-semibold px-3 py-1 rounded transition">Delete</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3">2</td>
+              <td class="px-4 py-3">Kaos Polos</td>
+              <td class="px-4 py-3">85</td>
+              <td class="px-4 py-3 flex gap-2">
+                <a href="edit-produk.html" class="bg-yellow-400 hover:bg-yellow-300 text-white text-xs font-semibold px-3 py-1 rounded transition">Edit</a>
+                <button class="bg-red-500 hover:bg-red-400 text-white text-xs font-semibold px-3 py-1 rounded transition">Delete</button>
+              </td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-4 py-3">3</td>
+              <td class="px-4 py-3">Tas Ransel</td>
+              <td class="px-4 py-3">40</td>
+              <td class="px-4 py-3 flex gap-2">
+                <a href="edit-produk.html" class="bg-yellow-400 hover:bg-yellow-300 text-white text-xs font-semibold px-3 py-1 rounded transition">Edit</a>
+                <button class="bg-red-500 hover:bg-red-400 text-white text-xs font-semibold px-3 py-1 rounded transition">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </div>
+  <footer class="bg-black px-8 py-3 flex justify-center text-xs text-white">
+    <span>© 2026 belajartailwind.com. All rights reserved.</span>
+  </footer>
+</body>
+</html>
