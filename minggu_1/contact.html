@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio - Web Fundamental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Aldo<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html">🏠︎ Home</a></li>
+      <li><a href="portfolio.html">🗀 Portfolio</a></li>
+      <li><a href="contact.html" class="active">🖂 Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <p class="section-label">🌐︎ Kontak</p>
+  <h1 class="section-title" style="font-size:26px;">Mari Berkolaborasi</h1>
+  <p style="color:var(--muted);font-size:14px;margin-bottom:32px;">Kirim pesan untuk diskusi atau kolaborasi.</p>
+
+  <div class="contact-wrap">
+
+    <form class="cform" action="#" method="POST">
+      <div class="frow">
+        <div class="fg">
+          <label for="nama">ⓘ Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="me !!" required />
+        </div>
+        <div class="fg">
+          <label for="email">☏ Email</label>
+          <input type="email" id="email" name="email" placeholder="me@email.com" required />
+        </div>
+      </div>
+      <div class="fg">
+        <label for="kategori">⫶☰ Keperluan</label>
+        <select id="kategori" name="kategori" required>
+          <option value="" disabled selected>Pilih...</option>
+          <option value="konsultasi">Konsultasi</option>
+          <option value="kolaborasi">Kolaborasi Proyek</option>
+          <option value="pertanyaan">Pertanyaan Umum</option>
+        </select>
+      </div>
+      <div class="fg">
+        <label for="pesan">🖂 Pesan</label>
+        <textarea id="pesan" name="pesan" rows="5" placeholder="Tuliskan pesanmu..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary" style="width:fit-content;">⌯⌲ Kirim Pesan</button>
+    </form>
+
+    <aside class="cside">
+      <div class="ccard">
+        <h3>🌐︎ Kontak</h3>
+        <div class="citem">aldodaeli07@gmail.com</div>
+        <div class="citem">Batam - Indonesia</div>
+      </div>
+      <div class="ccard">
+        <h3>Temukan Saya</h3>
+        <div class="slinks">
+          <a href="https://github.com/garammanis404" target="_blank" class="slink">⌨ GitHub</a>
+          <a href="https://medium.com/@aldodaeli07" target="_blank" class="slink">🖋 Medium</a>
+          <a href="https://www.linkedin.com/in/aldo-daeli-a55845391/" target="_blank" class="slink">🔗 LinkedIn</a>
+        </div>
+      </div>
+    </aside>
+
+  </div>
+
+</main>
+
+<footer>
+  <p>2025 Herdi Aldo Daeli - Rekayasa Keamanan Siber</p>
+</footer>
+
+</body>
+</html>

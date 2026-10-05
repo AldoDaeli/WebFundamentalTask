@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portofolio - Web Fundamental</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">Aldo<span>.dev</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">🏠︎ Home</a></li>
+      <li><a href="portfolio.html">🗀 Portfolio</a></li>
+      <li><a href="contact.html">🖂 Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main class="wrap">
+
+  <section class="hero">
+    <div class="hero-text">
+      <div class="tag">Semester 3 - Rekayasa Keamanan Siber</div>
+      <h1>Halo, saya<br><span id="typed"></span></h1>
+      <p class="role">Cybersecurity Engginer - Teknik Informatika</p>
+      <p class="bio">Mahasiswa Politeknik Negeri Batam - Angkatan 2025</p>
+      <div class="btns">
+        <a href="portfolio.html" class="btn btn-primary">Lihat Portfolio</a>
+        <a href="contact.html" class="btn btn-outline">Hubungi Saya</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="me.jpeg" alt="Foto Profil" class="avatar" />
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section-label">Keahlian</p>
+    <h2 class="section-title">Technical Skills</h2>
+    <div class="skill-groups">
+      <div class="skill-group">
+        <h4>Cybersecurity</h4>
+        <div class="badges">
+          <span class="badge">Kriptografi</span>
+          <span class="badge">Administrasi Sistem</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Programming</h4>
+        <div class="badges">
+          <span class="badge">Python</span>
+        </div>
+      </div>
+      <div class="skill-group">
+        <h4>Networking</h4>
+        <div class="badges">
+          <span class="badge">Firewall</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <p class="section-label">Riwayat</p>
+    <h2 class="section-title">Pendidikan</h2>
+    <div class="timeline-item">
+      <span class="tdate">2025 - kini</span>
+      <div class="tbody">
+        <h3>DIV - Rekayasa Keamanan Siber</h3>
+        <p class="org">Politeknik Negeri Batam - Semester 3</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>2025 Herdi Aldo Daeli - Rekayasa Keamanan Siber</p>
+</footer>
+
+<script>
+  const texts = ["Herdi Aldo Daeli","Cybersecurity Enginner","Python","Cryptography Learner"];
+  let i = 0, j = 0, del = false;
+  const el = document.getElementById("typed");
+  function type() {
+    const cur = texts[i];
+    el.textContent = del ? cur.slice(0, j--) : cur.slice(0, j++);
+    if (!del && j > cur.length) { del = true; setTimeout(type, 1600); return; }
+    if (del && j < 0) { del = false; i = (i + 1) % texts.length; }
+    setTimeout(type, del ? 45 : 95);
+  }
+  type();
+</script>
+
+</body>
+</html>
